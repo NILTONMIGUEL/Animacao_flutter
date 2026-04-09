@@ -25,13 +25,12 @@ class _MainAppState extends State<MainApp> {
                 clicou = !clicou;
               });
             },
-            child: AnimatedContainer(
-              duration: const Duration(seconds: 2),
-              curve: Curves.fastOutSlowIn,
-              width: double.infinity,
-              height: double.infinity,
-              alignment: clicou ? Alignment.topRight : Alignment.bottomLeft,
-              child: Container(
+            child: AnimatedAlign(
+              alignment: clicou ? Alignment.bottomLeft : Alignment.topRight,
+              duration: Duration(seconds: 1),
+              child: AnimatedContainer(
+                duration: const Duration(seconds: 2),
+                curve: Curves.fastOutSlowIn,
                 width: 50,
                 height: 50,
                 decoration: BoxDecoration(
