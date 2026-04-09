@@ -26,8 +26,8 @@ class _MainAppState extends State<MainApp> {
               });
             },
             child: AnimatedAlign(
-              alignment: clicou ? Alignment.bottomLeft : Alignment.topRight,
-              duration: Duration(seconds: 1),
+              alignment: clicou ? Alignment.topRight : Alignment.bottomLeft,
+              duration: Duration(seconds: 2),
               child: AnimatedContainer(
                 duration: const Duration(seconds: 2),
                 curve: Curves.fastOutSlowIn,
